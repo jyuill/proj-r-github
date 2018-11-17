@@ -15,7 +15,7 @@ Testing RStudio + Github integration features
 
 #### Can I recover a deleted file?
 
-
+Yes: just use same process as above to find the file version you want in a commit before it was deleted and Save As.
 
 ### Conflict resolution
 
