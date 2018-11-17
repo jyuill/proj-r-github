@@ -7,4 +7,5 @@ name.age <- name.age %>% mutate(
   adiff=lag(age)-age
 )
 
-ggplot(name.age, aes(x=name, y=adiff))+geom_bar(stat='identity')
+ggplot(name.age, aes(x=name, y=adiff))+geom_bar(stat='identity')+
+  theme_bw()
