@@ -9,3 +9,5 @@ write_csv(data, 'input/name-age.csv')
 
 ggplot(data, aes(x=name, y=age))+geom_bar(stat='identity')
 
+ggplot(data, aes(x=age))+geom_histogram(dinwidth=20)
+
