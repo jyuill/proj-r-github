@@ -1,4 +1,4 @@
-## File for delete to test recove
+## File for delete to test recover
 
 name.age <- read_csv('input/name-age.csv')
 

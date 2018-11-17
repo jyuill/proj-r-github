@@ -15,6 +15,8 @@ Testing RStudio + Github integration features
 
 #### Can I recover a deleted file?
 
+
+
 ### Conflict resolution
 
 #### Local file is ahead of remote
