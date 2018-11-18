@@ -41,7 +41,7 @@ Example 1:
 
 Options:
 
-* Select Stage and Commit. This will capture the code with conflict identified. Can then edit the file to resolve the conflict manually.
+* Select Stage and Commit. This will capture the code with conflict identified. Can then edit the file to resolve the conflict manually. Stage > Commit.
 
 #### Files conflict between local and remote and you want to keep local
 
