@@ -42,12 +42,15 @@ Example 1:
 Options:
 
 * Select Stage and Commit. This will capture the code with conflict identified. Can then edit the file to resolve the conflict manually. Stage > Commit.
+* Select Revert to roll back changes on remote file and keep current version of local file. Commit (even though will look empty). PUSH.
 
 #### Files conflict between local and remote and you want to keep local
 
-#### Files conflict between local and remote and you want to keep remote
+1. PULL - identify conflict
+2. Diff > Revert
+3. Commit > PUSH
 
-#### Files conflict between local and remote and you want to figure out what the conflicts are
+#### Files conflict between local and remote and you want to keep remote
 
 ### General
 
