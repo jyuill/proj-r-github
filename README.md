@@ -25,15 +25,17 @@ Even if you don't necessarily want to recover a deleted file, you can always go 
 
 ### Conflict resolution
 
-Conflicts typically happen when you don't PUSH your files to the remote repository when done working OR you don't PULL files from the remote repository at the start of a work session (and changes have been Pushed to the remote from elsewhere).
+Conflicts can arise when an individual file is changed in different locations and local and remote repositories are not syncronized properly. This typically happen when you don't PUSH your files to the remote repository when done working OR you don't PULL files from the remote repository at the start of a work session and in the meantime changes have been made elsewhere on another computer and PUSHed to the remote repository.
 
-Example 1:
+Example:
 
-* File has been changed in remote repository, not PULLed into local
+* File has been changed in remote repository but not PULLed into local
 * File has changed in local repo and COMMITTED
 * PULL from remote repo identifies Conflict that can't be resolved by software
 
-#### Example 1: What to do?
+#### What to do?
+
+First thing is to see what the conflict is:
 
 1. Git window > select file > Diff
 2. Icons will indicated it is unmerged (U)
