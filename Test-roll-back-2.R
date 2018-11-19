@@ -16,3 +16,4 @@ ggplot(name.age, aes(x=name, y=adiff))+geom_bar(stat='identity')+
 ggplot(name.age, aes(x=adiff))+geom_histogram()
 
 max(name.age$age)
+min(name.age$age)
