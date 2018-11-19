@@ -28,3 +28,4 @@ age.stdev <- sd(name.age$age)
 age.median <- median(name.age$age)
 
 mm <- age.mean-age.median
+mm2 <- age.median - age.mean
