@@ -45,7 +45,7 @@ Example:
 
 First thing is to see what the conflict is:
 
-1. Git window > icons will indicated the file is unmerged (U)
+1. Git window > icons will indicate two versions of the file as unmerged 'U U'
 2. Select file > Diff
 3. File window will show conflicts within <<<<< HEAD and >>>>> <commit id>
    - two columns with row numbers identify where the changes happened: column 1 refers to the local version, column 2 refers to the remote version
@@ -77,6 +77,12 @@ Then Stage > Commit > PUSH
 
 They will be pushed to the remote repo as part of the next successful PUSH, since changes in them are already committed.
 
-#### If I delete a file in the remote repository and have a newer version that has been Committed in the local repository, will it get deleted when I pull from the remote repository?
+#### If a file is deleted in the remote repository and there is a newer version that has been Committed in the local repository, what will happen when I try to PUSH the updated file to the remote repo?
 
+First of all, there will be an error with 'Updates were rejected...'. 
 
+Then, when you PULL from the remote repository, an Conflict will be generated. In the Git window, Status will show one version of file unmerged, one deleted: 'U D'.
+
+You can:
+
+* Diff > Revert to recover the local file; then Commit > PUSH
