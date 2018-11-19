@@ -69,7 +69,14 @@ Options:
 #### Keep/merge some changes from both local and remote
 
 Basically same as above for 'Keep remote changes', just modify code as desired.
+Then Stage > Commit > PUSH
 
 ### General
 
-#### If I delete a file in the remote repository and have a newer version in the local repository, will it get deleted when I pull from the remote repository?
+#### What happens to files that I commit in the same commit that generates a conflict, but these files are not involved in the conflict?
+
+They will be pushed to the remote repo as part of the next successful PUSH, since changes in them are already committed.
+
+#### If I delete a file in the remote repository and have a newer version that has been Committed in the local repository, will it get deleted when I pull from the remote repository?
+
+

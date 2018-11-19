@@ -26,3 +26,5 @@ age.stdev <- sd(name.age$age)
 
 ## remote change - adding median calc
 age.median <- median(name.age$age)
+
+mm <- age.mean-age.median
