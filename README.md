@@ -25,9 +25,13 @@ Even if you don't necessarily want to recover a deleted file, you can always go 
 
 ### Conflict resolution
 
-Conflicts can arise when an individual file is changed in different locations and local and remote repositories are not syncronized properly. This typically happen when you don't PUSH your files to the remote repository when done working OR you don't PULL files from the remote repository at the start of a work session and in the meantime changes have been made elsewhere on another computer and PUSHed to the remote repository.
+Conflicts can arise when an individual file is changed in different locations and local and remote repositories are not syncronized properly. This typically happen when you don't PUSH your files to the remote repository when done working OR you don't PULL files from the remote repository at the start of a work session and in the meantime changes have been made elsewhere on another computer and PUSHed to the remote repository. Conflict arises when:
 
-Example:
+* You make changes to any file in your local repo and try to PUSH to remote
+* You make changes to a file in your local repor that has different changes in the remote repo and you try to PULL from the remote
+
+The first case above is easily dealt with simply by doing a PULL to get the latest 
+Example 1:
 
 * File has been changed in remote repository but not PULLed into local
 * File has changed in local repo and COMMITTED
