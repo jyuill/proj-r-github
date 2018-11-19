@@ -49,20 +49,26 @@ First thing is to see what the conflict is:
 2. Select file > Diff
 3. File window will show conflicts within <<<<< HEAD and >>>>> <commit id>
    - two columns with row numbers identify where the changes happened: column 1 refers to the local version, column 2 refers to the remote version
+   - ====== also demarcates the local vs remote changes, whith local above the ======== and remote changes below
+4. Local version of the file will now also have these markings
 
 Options:
 
-* Select Revert to roll back changes on remote file and keep current version of local file. Commit (even though will look empty). PUSH.
-* Select Stage and Commit. This will capture the code with conflict identified. You can then edit the file to resolve the conflict manually. Stage > Commit.
+#### Keep local changes
 
+1. Git > select file > Diff > identify conflict > Revert
+2. Commit > PUSH (file may not appear in Git window)
 
-#### Files conflict between local and remote and you want to keep local
+#### Keep remote changes
 
-1. PULL - identify conflict
-2. Diff > Revert
-3. Commit > PUSH
+1. Git > select file > Diff > identify changes
+2. Open file
+3. Remove the code identified as the local change, leave the code identified as remote changes, remove any of the conflict markings
+4. Stage > Commit > PUSH
 
-#### Files conflict between local and remote and you want to keep remote
+#### Keep/merge some changes from both local and remote
+
+Basically same as above for 'Keep remote changes', just modify code as desired.
 
 ### General
 

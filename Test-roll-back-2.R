@@ -19,3 +19,6 @@ age.max <- max(name.age$age)
 age.min <- min(name.age$age)
 age.mean <- mean(name.age$age)
 age.range <- age.max-age.min
+
+## local change - std dev
+age.stdev <- sd(name.age$age)
