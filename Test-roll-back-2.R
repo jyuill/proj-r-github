@@ -20,4 +20,5 @@ age.min <- min(name.age$age)
 age.mean <- mean(name.age$age)
 age.range <- age.max-age.min
 
+## remote change - adding median calc
 age.median <- median(name.age$age)
