@@ -17,3 +17,4 @@ ggplot(name.age, aes(x=adiff))+geom_histogram()
 
 max(name.age$age)
 min(name.age$age)
+mean(name.age$age)
