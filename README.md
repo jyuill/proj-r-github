@@ -86,4 +86,4 @@ Then, when you PULL from the remote repository, an Conflict will be generated. I
 You can:
 
 * Diff > Revert to recover the local file; then Commit > PUSH
-* Stage changes, which will delete local file; then Commit > PUSH (of course, if you want to recover the file, you can always find it in the history > view > save as :)
+* Stage changes, which will delete local file; then Commit > PUSH (of course, if you want to recover the file, you can always find it in Git > History > View file > Save As... :)
